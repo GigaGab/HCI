@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background: #140d0d !important;
+    background-size: 800px 700px; /* Adjust the width and height as needed */
+}
+
+/* Animation for spinning image */
+.navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+#navbarNav {
+    margin-left: auto !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    text-align: right;
+}
+
+.navbar-nav .nav-link.disabled {
+    color: #000000;
+}
+
+.navbar-nav {
+    margin-left: auto !important;
+    float: right;
+    text-align: right;
+}
+
+.navbar-collapse {
+    justify-content: flex-end !important;
+}
+
+.navbar {
+    background: linear-gradient(to right, #ece0d1, #8B4513) !important;
+    padding: 0 !important;
+}
+
+.navbar-logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+.text-center {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    height: 100px;
+    text-align: center;
+}
+
+.text-center p {
+    margin-bottom: 5px;
+}
+
+.social-logo, .social-links a {
+    width: 40px;
+    margin: 0 20px; /* Adjust margin to control separation between logos and links */
+}
+
+.social-links {
+    display: inline-block;
+    margin-bottom: 5px; /* Adjust margin to move the links upward */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh; /* Adjust the height as needed, using a percentage or viewport height (vh) */
+    width: 70%; /* Adjust the width as needed */
+    margin: 50px auto 0; /* Adjust the margin-top value as needed */
+}
+
+video {
+    width: 100%; /* Set the video width to 100% of its container */
+    height: 100%; /* Set the video height to 100% of its container */
+    object-fit: cover; /* Maintain the video's aspect ratio and cover the container */
+}
+
+
+.navbar-nav .nav-link,
+.navbar-nav .home-link {
+    position: relative;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-nav .home-link:hover {
+    color: #ffcc00 !important; /* Use !important to override any conflicting styles */
+    animation: glowing 1.5s infinite;
+}
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #ffcc00; }
+    50% { box-shadow: 0 0 20px #ffcc00; }
+    100% { box-shadow: 0 0 5px #ffcc00; }
+}
